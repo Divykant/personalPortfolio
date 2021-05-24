@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="skin.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="port1.css">
+    <link rel="stylesheet" href="skin.css" class="alternate-style" title="skin" disabled>
+    <link rel="stylesheet" href="skin1.css" class="alternate-style" title="skin1" disabled>
+    <link rel="stylesheet" href="skin.css" class="alternate-style" title="skin2" disabled>
+    <link rel="stylesheet" href="skin3.css" class="alternate-style" title="skin3" disabled>
+    <link rel="stylesheet" href="skin4.css" class="alternate-style" title="skin4" disabled>
+    <link rel="stylesheet" href="style-switcher.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+  <!--preloader-->
+  <div class="preloader">
+    <div class="box">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+
    <header class="header">
        <div class="container">
            <div class="row justify-content-between">
                <div class="logo">
-                   <a href="index.html">W</a>
+                   <a href="index.html">B</a>
                </div>
                <div class="hamburger-btn outer-shadow hover-in-shadow">
                 <span></span>
@@ -21,28 +36,29 @@
            </div>
        </div>
    </header>
-</body>
-</html>
  <!---nav bar --->
  <nav class="nav-menu">
     <div class="close-nav-menu outer-shadow hover-in-shadow"> &times; </div>
     <div class="nav-menu-inner">
       <ul>
-        <li> <a href="#" class="inner-shadow active"> Home</a></li>
-        <li> <a href="#" class="outer-shadow hover-in-shadow"> About</a></li>
-        <li> <a href="#" class="outer-shadow hover-in-shadow"> service</a></li>
-        <li> <a href="#" class="outer-shadow hover-in-shadow"> portfolio</a></li>
-        <li> <a href="#" class="outer-shadow hover-in-shadow"> testimonial </a></li>
-        <li> <a href="#" class="outer-shadow hover-in-shadow"> contact</a></li>
+        <li> <a href="#home" class="link-item inner-shadow active"> Home</a></li>
+        <li> <a href="#about" class="link-item outer-shadow hover-in-shadow"> About</a></li>
+        <li> <a href="#service" class="link-item outer-shadow hover-in-shadow"> service</a></li>
+        <li> <a href="#testimonial" class="link-item outer-shadow hover-in-shadow"> testimonial </a></li>
+        <li> <a href="#contact" class="link-item outer-shadow hover-in-shadow"> contact</a></li>
       </ul>
     </div>
       <!---nav copyright --->
     <p class="copyright-text">&copy; 2020 the web</p>
   </nav>
 
+  <div class="fade-out-effect">
+  </div>
+
+
 
 <!---home --->
-<div class="home-section section">
+<div class="home-section section active" id="home">
   <!---effect wrap start --->
   <div class="effect-wrap">
     <div class="effect effect-1">
@@ -71,13 +87,13 @@
     <div class="row full-screen align-items-center">
       <div class="home-text">
         <p>hello</p>
-        <h2>i m divy</h2>
-        <h1>coder</h1>
-        <a href="" class="outer-shadow hover-in-shadow btn-1">more about me</a>
+        <h2>i am NAME</h2>
+        <h1>co founder of microsoft</h1>
+        <a href="#about" class="link-item outer-shadow hover-in-shadow btn-1">More About Me</a>
       </div>
       <div class="home-img">
         <div class="img-box inner-shadow">
-          <img src="img/logo.jpg" alt="profile pic" class="outer-shadow">
+          <img src="img/logo1.jpg" alt="profile pic" class="outer-shadow">
         </div>
       </div>
     </div>
@@ -85,7 +101,7 @@
 </div>
 
 <!---about section-->
-<section class="about-section section">
+<section class="about-section section" id="about">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -108,13 +124,13 @@
         <!---link  section end-->
       </div>
       <div class="about-info">
-        <p><span>Hi!! divy this side.</span>A computer programmer, sometimes called a 
+        <p><span>Hi!! NAME this side.</span>A computer programmer, sometimes called a 
           software developer, a programmer or more recently a coder, is a person who 
           creates computer software. The term computer programmer can refer to a
            specialist in one area of computers, or to a generalist who writes code
             for many kinds of software.</p>
             <a href="" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-            <a href="" class="btn-1 outer-shadow hover-in-shadow">hire me</a>
+            <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
       </div>
     </div>
      <!---tabs in about section-->
@@ -128,11 +144,18 @@
      <!---tabs in about section end-->
      <!---skills start-->
       <div class="row">
-        <div class="skills tab-content">
+        <div class="skills tab-content active">
           <div class="row">
             <div class="skill-item">
-              <p>HTML</p>
-              
+              <div class="row">
+                <div class="about-tabs">
+                  <span class="tab-item outer-shadow active" data-target=".skills"> html</span> <br>
+                  <span class="tab-item outer-shadow active" data-target=".skills"> html</span><br>
+                  <span class="tab-item outer-shadow active" data-target=".skills"> html</span><br>
+                  <span class="tab-item outer-shadow active" data-target=".skills"> html</span><br>
+                  <span class="tab-item outer-shadow active" data-target=".skills"> html</span><br>
+                </div>
+              </div>  
             </div>
           </div>
         </div>
@@ -148,7 +171,7 @@
                <div class="timeline-item">
                  <div class="timeline-item-inner outer-shadow">
                    <i class="fas fa-briefcase icon"> </i>
-                   <span>date</span>
+                   <span>dd/mm/yy-dd/mm/yy</span>
                    <h3>positin</h3>
                    <h4>company</h4>
                    <p>A computer programmer, sometimes called a 
@@ -161,7 +184,7 @@
                <div class="timeline-item">
                 <div class="timeline-item-inner outer-shadow">
                   <i class="fas fa-briefcase icon"> </i>
-                  <span>date</span>
+                  <span>dd/mm/yy-dd/mm/yy</span>
                   <h3>positin</h3>
                   <h4>company</h4>
                   <p>A computer programmer, sometimes called a 
@@ -174,7 +197,7 @@
               <div class="timeline-item">
                 <div class="timeline-item-inner outer-shadow">
                   <i class="fas fa-briefcase icon"> </i>
-                  <span>date</span>
+                  <span>dd/mm/yy-dd/mm/yy</span>
                   <h3>positin</h3>
                   <h4>company</h4>
                   <p>A computer programmer, sometimes called a 
@@ -190,7 +213,296 @@
      </div>
      <!--experience end -->
      <!--education start-->
-     
+     <div class="row">
+      <div class="education tab-content">
+        <div class="row">
+          <div class="timeline">
+            <div class="row">
+              <!---timeline item-->
+              <div class="timeline-item">
+                <div class="timeline-item-inner outer-shadow">
+                  <i class="fas fa-graduation-cap icon"> </i>
+                  <span>date</span>
+                  <h3>positin</h3>
+                  <h4>company</h4>
+                  <p>A computer programmer, sometimes called a 
+                   software developer, a programmer or more recently a coder, is a person who 
+                   creates computer software.</p>
+                </div>
+              </div>
+              <!--item end-->
+              <!---timeline item-->
+              <div class="timeline-item">
+               <div class="timeline-item-inner outer-shadow">
+                 <i class="fas fa-graduation-cap icon"> </i>
+                 <span>date</span>
+                 <h3>positin</h3>
+                 <h4>company</h4>
+                 <p>A computer programmer, sometimes called a 
+                  software developer, a programmer or more recently a coder, is a person who 
+                  creates computer software.</p>
+               </div>
+             </div>
+             <!--item end-->
+             <!---timeline item-->
+             <div class="timeline-item">
+               <div class="timeline-item-inner outer-shadow">
+                 <i class="fas fa-graduation-cap icon"> </i>
+                 <span>date</span>
+                 <h3>positin</h3>
+                 <h4>company</h4>
+                 <p>A computer programmer, sometimes called a 
+                  software developer, a programmer or more recently a coder, is a person who 
+                  creates computer software.</p>
+               </div>
+             </div>
+             <!--item end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
      <!--education end-->
   </div>
 </section>
+<!---service section-->
+<section class="service-section section" id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="service">what i do </h2>
+      </div>
+    </div>
+    <div class="row">
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-mobile-alt" ></i>
+          </div>
+          <h3>responisve site</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-laptop-code" ></i>
+          </div>
+          <h3>web d</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-palette" ></i>
+          </div>
+          <h3>graphic</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-code" ></i>
+          </div>
+          <h3>clean code</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-search" ></i>
+          </div>
+          <h3>seo</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-bullhorn" ></i>
+          </div>
+          <h3>great work</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-mobile-alt" ></i>
+          </div>
+          <h3>responisve site</h3>
+          <p>A computer programmer, sometimes called a 
+            software developer</p>
+        </div>
+      </div>
+      <!--item end-->
+    </div>
+  </div>
+</section>
+<!---section end-->
+<!---testimonial-->
+<section class="testimonial-section section" id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="testimonial">client speak</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="testi-box">
+        <div class="testi-slider  outer-shadow">
+          <div class="testi-slider-container">
+            <!--item start-->
+            <div class="testi-item">
+               <i class="fas fa-quote-right left"></i>
+                <i class="fas fa-quote-left right"></i>
+                <p>A computer programmer, sometimes called a 
+                software develope</p>
+                <img src="img/testi.jpg" alt="testimonial">
+                <span>Raj Himachal</span>
+            </div>
+            <!--item end-->
+            <!--item start-->
+            <div class="testi-item active">
+              <i class="fas fa-quote-right left"></i>
+               <i class="fas fa-quote-left right"></i>
+               <p>A computer programmer, sometimes called a 
+               software develope</p>
+               <img src="img/testi.jpg" alt="testimonial">
+               <span>xyz</span>
+           </div>
+           <!--item end-->
+           <!--item start-->
+           <div class="testi-item">
+            <i class="fas fa-quote-right left"></i>
+             <i class="fas fa-quote-left right"></i>
+             <p>A computer programmer, sometimes called a 
+             software develope</p>
+             <img src="img/testi.jpg" alt="testimonial">
+             <span>Raj Himachal</span>
+         </div>
+         <!--item end-->
+          </div>
+        </div>
+        <div class="testi-slider-nav">
+          <span class="prev outer-shadow hover-in-shadow"> <i class="fas fa-angle-left"></i></span>
+          <span class="next outer-shadow hover-in-shadow"> <i class="fas fa-angle-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--testimonial end-->
+<!---contact start-->
+<section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="contact">get in touch</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!--item start-->
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-phone"></i>
+          <span>phone number</span>
+          <p>+91 1234567890</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-envelope"></i>
+          <span>e-mail</span>
+          <p>mailid@gmail.com</p>
+        </div>
+      </div>
+      <!--item end-->
+      <!--item start-->
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>address</span>
+          <p>house number-67, sector-5, India</p>
+        </div>
+      </div>
+      <!--item end-->
+    </div>
+    <div class="row">
+      <div class="contact-form">
+        <form action="">
+          <div class="row">
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Name" class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="email" placeholder="E-mail" class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Subject" class="input-control">
+              </div>
+            </div>
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <textarea name="" placeholder="Add message" id="" class="input-control" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="submit-btn">
+              <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!---contact end -->
+<!---style switch-->
+<div class="style-switcher outer-shadow">
+  <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+    <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <div class="day-night outer-shadow s-icon hover-in-shadow">
+    <i class="fas "></i>
+  </div>
+  <h4>theme colors</h4>
+  <div class="colors">
+    <span class="skin" onclick="setActiveStyle('skin')" ></span>
+    <span class="skin1" onclick="setActiveStyle('skin1')" ></span>
+    <span class="skin2" onclick="setActiveStyle('skin2')" ></span>
+    <span class="skin3" onclick="setActiveStyle('skin3')" ></span>
+    <span class="skin4" onclick="setActiveStyle('skin4')" ></span>
+  </div>
+</div>
+<!--style end-->
+<script src="port.js"></script>
+<script src="style-switcher.js"></script>
+</body>
+</html>
